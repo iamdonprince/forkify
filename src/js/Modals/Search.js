@@ -13,7 +13,7 @@ class Search {
 
     try {
       const res = await axios.get(
-        `${proxy}https://recipesapi.herokuapp.com/api/search?q=${this.query}`
+        `${proxy}https://recipesapi.herokuapp.com/api/v2/recipes?q=${this.query}`
       );
       this.result = res.data.recipes;
          
