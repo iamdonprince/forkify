@@ -80,9 +80,9 @@ export const renderResults = (recipes, page = 1, resPerPage = 10) => {
   if (recipes.length > 0) {
     recipes.slice(start, end).forEach((data) => {
       const markup = `<li>
-    <a class="results__link" href="#${data.recipe_id}">
+    <a class="results__link" href="#${data.recipeId}">
         <figure class="results__fig">
-            <img src="${data.image_url}" alt="Test">
+            <img src="${data.imageUrl}" alt="Test">
         </figure>
         <div class="results__data">
             <h4 class="results__name">${limitRecipeTitle(data.title)}</h4>
